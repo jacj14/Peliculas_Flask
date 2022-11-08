@@ -1,4 +1,4 @@
-@startuml
+@startuml "Model Entidad Relacion"
 
 Entity Movie {
       code varchar (10) <<PK>>
