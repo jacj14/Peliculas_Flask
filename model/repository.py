@@ -1,4 +1,4 @@
-from model.entity import Movie
+from model.entity import Movie, Review
 
 class MovieRepository:
       
@@ -12,4 +12,18 @@ class MovieRepository:
             pass
 
 class ReviewRepository:
-      pass
+      
+      def insert(review: Review) -> None:
+            pass
+      
+      def findById(id: int) -> list:
+            pass
+      
+      def findAll () -> list:
+            pass
+      
+      def update(review: Review) -> None:
+            pass
+      
+      def delete(id: int) -> None:
+            pass
