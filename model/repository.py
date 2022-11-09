@@ -31,7 +31,7 @@ class MovieRepository:
       
       def findAll () -> list:
             sql = """
-                  SELECT code, name, email, image_url, year
+                  SELECT code, name, image_url, year
                   FROM Movies
                   ORDER BY name;
                   """
@@ -112,7 +112,7 @@ class ReviewRepository:
                   SET name = '{review.name}',
                       email = '{review.email}',
                       description = '{review.description}',
-                      raiting = '{review.raiting}',
+                      raiting = {review.raiting},
                       code = '{review.code}'
                   WHERE id = {review.id};
                   """
