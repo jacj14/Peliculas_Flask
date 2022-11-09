@@ -7,6 +7,7 @@ class Movie:
             
 class Review:
       def __init__(self, name, email, description, raiting, movie_code, id = None):
+            self.id = id
             self.name = name
             self.email = email
             self.description = description
